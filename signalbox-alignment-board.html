@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signalbox Alignment</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        #figmaEmbed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="figmaEmbed" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FaetpGVJGsO3RqpX2nLI6Qm%2FImpact-Effort-Matrix-(Copy)%3Ftype%3Dwhiteboard%26node-id%3D0%253A1%26t%3DvcmrXypGwm3EF7R1-1" width="100%" height="100%" allowfullscreen></iframe>
+    <script>
+        window.onload = function() {
+            var iframe = document.getElementById('figmaEmbed');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) { /* Safari */
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { /* IE11 */
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
